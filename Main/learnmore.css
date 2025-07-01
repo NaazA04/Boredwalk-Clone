@@ -1,0 +1,201 @@
+
+    .sassclub-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 32px 16px 0 16px;
+    }
+
+    .sassclub-title {
+        text-align: center;
+        color: #f8a8b6;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.2em;
+        letter-spacing: 0.02em;
+    }
+    
+    .sassclub-subtitle {
+        text-align: center;
+        color: #b49be0;
+        font-size: 1.4rem;
+        margin-bottom: 32px;
+        font-weight: 500;
+    }
+    
+    .sassclub-grid {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        margin-top: 18px;
+        flex-wrap: wrap;
+    }
+    
+    .sassclub-left, .sassclub-center, .sassclub-right {
+        flex: 1 1 300px;
+        min-width: 260px;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .how-it-works {
+        background: #B79DE5;
+        border-radius: 12px;
+        padding: 18px 0px 10px 0px;
+        color: #222;
+    }
+    
+    .text{
+        background-color: #dfd7ec;
+        padding: 12px 0;
+        padding-left: 12px;
+        text-align: left;
+        line-height: 26px;
+    }
+
+    .how-title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .how-it-works ol {
+        margin: 0 0 0 18px;
+        padding: 0;
+        font-size: 1.1rem;
+    }
+    
+    .redeem {
+        background: #ffd23f;
+        border-radius: 12px;
+        padding: 0 0 10px 0;
+        color: #222;
+        margin-top: 10px;
+    }
+    
+    .redeem-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        background: #ffbe1a;
+        border-radius: 12px 12px 0 0;
+        padding: 12px 0;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .redeem table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 0;
+        background: #fff6d6;
+        border-radius: 0 0 12px 12px;
+        overflow: hidden;
+    }
+    
+    .redeem th, .redeem td {
+        padding: 8px 10px;
+        text-align: left;
+        font-size: 1.08rem;
+    }
+    
+    .redeem th {
+        background: #fff6d6;
+        font-weight: 600;
+        color: #222;
+    }
+    
+    .redeem tr:not(:last-child) td {
+        border-bottom: 1px solid #f5e6b6;
+    }
+    
+    .earn-points {
+        background: #f8c2cb;
+        border-radius: 12px;
+        padding: 0 0 10px 0;
+        color: #222;
+    }
+    
+    .earn-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        background: #f8a8b6;
+        border-radius: 12px 12px 0 0;
+        padding: 12px 0;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .earn-points table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 0;
+        background: #ffe6ec;
+        border-radius: 0 0 12px 12px;
+        overflow: hidden;
+    }
+    
+    .earn-points th, .earn-points td {
+        padding: 8px 10px;
+        text-align: left;
+        font-size: 1.08rem;
+    }
+    
+    .earn-points th {
+        background: #ffe6ec;
+        font-weight: 600;
+        color: #222;
+    }
+    
+    .earn-points tr:not(:last-child) td {
+        border-bottom: 1px solid #f5c6d6;
+    }
+    
+    .small {
+        font-size: 0.95em;
+        color: #888;
+    }
+    
+    .gift-karma {
+        margin-top: 18px;
+        font-size: 1.08rem;
+        background: none;
+        color: #222;
+        padding: 0 6px;
+    }
+    
+    .sassclub-right {
+        align-items: stretch;
+    }
+    
+    .bonus-tiers {
+        background: #7eeaff;
+        border-radius: 12px;
+        padding: 18px 0px 10px 0px;
+        color: #222;
+    }
+    
+    .bonus-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    
+    .bonus-desc {
+        font-size: 1.05rem;
+        color: #222;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    
+    .bonus-levels > div {
+        margin-bottom: 12px;
+        font-size: 1.08rem;
+    }
+
+    .all{
+        padding-left: 12px;
+        background-color: #DEFDFF;
+    }

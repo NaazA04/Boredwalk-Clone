@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boredwalk - Flash Sale</title>
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+    <div class="top-bar">
+        FREE U.S SHIPPING ON $65+ ORDERS
+    </div>
+    <div class="header">
+        <div class="logo">
+            <img src="Images/logo.jpeg" class="logo-img">
+        </div>
+        <nav class="nav">
+                <div class="nav-item">
+                GIFTS+ACCESSORIES
+                <div class="dropdown">
+                    <a href="#">Books + Games</a>
+                    <a href="Stickers.html">Stickers</a>
+                    <a href="dishtowels.html">Kitchen Stuff</a>
+                    <a href="messengerbags.html">Messenger Bags</a>
+                    <a href="#">Tote Bags</a>
+                    <a href="sale.html">Clearance</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                MENS
+                <div class="dropdown">
+                    <a href="#">Mens TShirts</a>
+                    <a href="unisextanktops.html">Unisex Tank Tops</a>
+                    <a href="unisexhoodies.html">Unisex Hoodies</a>
+                    <a href="#">Unisex Fleece Sweatshirts</a>
+                    <a href="sale.html">Clearance</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                LADIES
+                <div class="dropdown">
+                    <a href="#">Ladies Tees</a>
+                    <a href="unisextanktops.html">Unisex Tank Tops</a>
+                    <a href="unisexhoodies.html">Unisex Hoodies</a>
+                    <a href="#">Unisex Fleece Sweatshirts</a>
+                    <a href="sale.html">Clearance</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                KIDS
+                <div class="dropdown">
+                    <a href="#">All Kids</a>
+                    <a href="#">Boy's Tees</a>
+                    <a href="#">Girl's Tees</a>
+                    <a href="#">Infant Bodysuits</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                SHOP BY THEME
+                <div class="dropdown">
+                    <a href="#">Best Sellers</a>
+                    <a href="#">Dark Humor</a>
+                    <a href="#">Book Lover</a>
+                    <a href="#">Food + Drink</a>
+                    <a href="#">Mental Health</a>
+                    <a href="#">Introvert</a>
+                    <a href="#">Funny Animals</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                ABOUT/HELP
+                <div class="dropdown">
+                    <a href="#">Our Story</a>
+                    <a href="#">Podcast</a>
+                    <a href="#">Custom Orders</a>
+                    <a href="#">Reviews</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Wishlist</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                </div>
+            </nav>
+    
+    
+        <div class="header-icons">
+                <div class="icon">
+                    <!-- home icon -->
+                    <a href="index.html" class="icon home" title="Home">
+                        <svg width="40" height="40" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 30 L32 10 L56 30" /> <!-- roof -->
+                            <rect x="20" y="30" width="24" height="24" rx="2" ry="2" /> <!-- house -->
+                        </svg>
+                    </a>
+                </div>
+                    <!-- Search Icon -->
+                    <div class="icon search-icon">
+                        <svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="#fff" stroke-width="4">
+                            <circle cx="28" cy="28" r="20"/>
+                            <line x1="44" y1="44" x2="60" y2="60"/>
+                        </svg>
+                    </div>
+                    <!-- Search Modal -->
+                    <div id="searchModal" class="search-modal">
+                        <div class="search-container">
+                            <div class="search-header">
+                                <input type="text" id="searchInput" placeholder="Search products...">
+                                <button class="close-search">&times;</button>
+                            </div>
+                            <div class="search-filters">
+                                <select id="categoryFilter">
+                                    <option value="">All Categories</option>
+                                    <option value="hoodies">Hoodies</option>
+                                    <option value="tanktops">Tank Tops</option>
+                                    <option value="stickers">Stickers</option>
+                                    <option value="messengerbags">Messenger Bags</option>
+                                    <option value="dishtowels">Dish Towels</option>
+                                </select>
+                                <div class="price-filter">
+                                    <input type="number" id="minPrice" placeholder="Min Price">
+                                    <input type="number" id="maxPrice" placeholder="Max Price">
+                                </div>
+                            </div>
+                            <div id="searchResults" class="search-results"></div>
+                        </div>
+                    </div>
+                    <div class="icon">
+                    <!-- Heart Icon -->
+                    <svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="#fff" stroke-width="4">
+                        <path d="M32 56s-20-12.8-20-26.4C12 18.4 24 12 32 24c8-12 20-5.6 20 5.6C52 43.2 32 56 32 56z"/>
+                    </svg>
+                    </div>
+                    <div class="icon">
+                    <!-- User Icon -->
+                    <a href="Profile.html">
+                    <svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="#fff" stroke-width="4">
+                        <circle cx="32" cy="24" r="12"/>
+                        <path d="M12 56c0-11 40-11 40 0"/>
+                    </svg>
+                </a>
+                    </div>
+                    <!-- Bag Icon -->
+                    <div class="icon bag">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="16" y="20" width="32" height="32" rx="6" ry="6" />
+                        <path d="M24 20v-6a8 8 0 0 1 16 0v6" />
+                        </svg>
+                    </div>
+        </div>
+        </div>
+
+
+        <div id="newsletterModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <img src="Images/logo.jpeg" class="modal-logo">
+                <h2>SUBSCRIBE AND</h2>
+                <h1>ENTER TO WIN!</h1>
+                <p>Sign up for our rad email newsletter to win a $50 gift card in our monthly drawing!</p>
+                <form id="newsletterForm">
+                    <label for="email"><b>Email Address</b></label>
+                    <input type="email" id="email" name="email" placeholder="What is your email address?" required>
+                    <button type="submit">NEXT</button>
+                </form>
+                </div>
+            </div>
+
+
+
+
+    <div class="flash-sale">
+        <div class="flash-sale-left">
+            <div class="flash-sale-title">FLASH SALE <span class="emoji">💸</span></div>
+            <div class="flash-sale-sub">BECAUSE CAPITALISM SAID SO</div>
+            <div class="flash-sale-desc">Your inbox is screaming, your wallet is crying, but hey - 20% off, so win-win?</div>
+        </div>
+        <div class="flash-sale-right">
+            <div class="timer-box"><span class="timer-icon">⏳</span> Ends in: <span id="countdown">48h 00m 00s</span></div>
+            <a href="sale.html"><button class="grab-btn">Grab the Goods</button></a>
+        </div>
+    </div>
+    <div class="product-feature">
+        <img src="Scroll/s1.png" class="product-img active">
+        <img src="Scroll/s2.png" class="product-img">
+        <img src="Scroll/s3.png" class="product-img">
+        <img src="Scroll/s4.png" class="product-img">
+        <img src="Scroll/s5.png" class="product-img">
+
+        <button class="leftnextbtn">&#8249;</button>  
+        <button class="rightnextbtn">&#8250;</button>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <div class="product-section">
+        <h1 class="bestsellingitm">OUR BEST SELLING ITEM</h1>
+        <div class="product-content">
+            <div class="product-images">
+                <div class="mainimg">
+                    <img src="Images/cards1.webp" class="main-image">
+                </div>
+                <div class="thumbnails">
+                <img src="Images/card2.avif">
+                <img src="Images/card3.avif">
+                <img src="Images/card4.avif">
+                <img src="Images/card5.avif">
+                </div>
+            </div>
+            <div class="product-info">
+                <h2>DELVE DECK CONVERSATION CARDS</h2>
+                <div class="reviews">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">425 reviews</span>
+                </div>
+                <div class="price">$ 32.00</div>
+                <div class="shop-pay">
+                    Pay over time for orders over $35.00 with 
+                    <span class="shop-pay-badge">shop<span class="pay">Pay</span></span>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="desc">
+                    Conversation starters for every situation, from getting to know new friends to bonding with your closest intimates.
+                </div>
+                <div class="desc bold">
+                    This thoughtfully designed deck has <b>4 levels of intensity, ranging from light to dark. You can keep it light, staying in the shallow end, or go deep and delve into heavier questions.</b>
+                </div>
+                <div class="quantity-row">
+                <label for="qty">Quantity</label>
+                <div class="qty-selector">
+                    <button class="qty-minus">-</button>
+                    <input type="text" id="qty" value="1" readonly>
+                    <button class="qty-plus">+</button>
+                </div>
+                <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                <ul class="shipping-info">
+                <li><span class="emoji">😍</span> Free shipping on order $65+</li>
+                <li><span class="emoji">📦</span> Ships Monday to Friday from Los Angeles</li>
+                <li><span class="emoji">📅</span> Ships 1-2 business days</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        <div class="cart-modal" id="cartModal">
+            <!-- Cart Header -->
+                <div class="cart-header">
+                <span>YOUR CART</span>
+                <button class="cart-close">&times;</button>
+                </div>
+            
+                <!-- Cart Progress Bar -->
+                <div class="cart-progress">
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"></div>
+                </div>
+                <div class="progress-text"></div>
+                </div>
+            
+                <!-- Cart Empty State -->
+                <div class="cart-empty">
+                <div class="cart-empty-title">YOUR CART IS EMPTY!</div>
+                <div class="cart-empty-desc">Add your favorite items to your cart.</div>
+                <a href="sale.html"><button class="shop-now-btn">Shop Now</button></a>
+                </div>
+            
+                <!-- Cart Items List Container (will be injected by JS) -->
+                <!-- This will be inserted above cartSummary dynamically -->
+            
+                <!--  Checkout Summary  -->
+                <div class="cart-footer" id="cartSummary" style="padding: 16px; display: none;">
+                <div style="font-size: 1.1rem; margin-bottom: 8px;">
+                    Subtotal: <span id="cartSubtotalAmount">$0.00</span>
+                </div>
+                <button class="checkout-btn" style="
+                    background:  #fdadf9;
+                    color: #ffffff;
+                    border: none;
+                    padding: 12px;
+                    font-size: 1.1rem;
+                    width: 100%;
+                    cursor: pointer;
+                    border-radius: 6px;">
+                    Checkout
+                </button>
+                </div>
+            
+                <!-- 💡 Product Suggestions -->
+                <div class="cart-suggestions">
+                <div class="suggestions-title">YOU MAY ALSO LIKE</div>
+                <div class="suggestion-list">
+                    <div class="suggestion-item">
+                    <img src="Images/whatever.webp">
+                    <div class="suggestion-info">
+                        <div class="suggestion-name">Whatever! An Activity Book for 90s Kids</div>
+                        <div class="suggestion-price">$20.00</div>
+                    </div>
+                    <button class="add-btn">Add</button>
+                    </div>
+            
+                    <div class="suggestion-item">
+                    <img src="Images/adventures-in-the-abyss.webp">
+                    <div class="suggestion-info">
+                        <div class="suggestion-name">Adventures in the Abyss: A Dystopian Activity Book For The Modern Age</div>
+                        <div class="suggestion-price">$20.00</div>
+                    </div>
+                    <button class="add-btn">Add</button>
+                    </div>
+            
+                    <div class="suggestion-item">
+                    <img src="Images/bloodythirstybook.webp">
+                    <div class="suggestion-info">
+                        <div class="suggestion-name">Bloodthirsty and Bewitched: An Activity Book for Strange and Unusual Adults</div>
+                        <div class="suggestion-price">$20.00</div>
+                    </div>
+                    <button class="add-btn">Add</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            
+            <br>
+            <br>
+            <br>
+        <hr>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="dishtowels.html">
+                <p class="p1">DISH TOWELS</p>
+                <p class="p2"> SHOP NOW</p>
+                <img class="prod" src="Images/dishtowel.webp">
+            </a>
+            </div>
+            <div class="grid-item">
+                <a href="delvedeck.html">
+                <p class="p1">DELVE DECK</p>
+                <p class="p2"> SHOP NOW</p>
+                <img class="prod" src="Images/card4.avif">
+            </a>
+            </div>
+            <div class="grid-item">
+                <a href="goodcompanyguestbook.html">
+                <p class="p1">GOOD COMPANY GUEST BOOK</p>
+                <p class="p2"> SHOP NOW</p>
+                <img class="prod" src="Images/goodcompanybook.webp">
+            </a>
+            </div>
+            <div class="grid-item">
+                <p class="p1">GRIEVANCE JOURNAL</p>
+                <p class="p2"> SHOP NOW</p>
+                <img class="prod" src="Images/grievancejournal.webp">
+            </div>
+            <div class="grid-item">
+                <p class="p1">ACTIVITY BOOKS</p>
+                <p class="p2"> SHOP NOW</p>
+                <img class="prod" src="Images/activitybooks.webp">
+            </div>
+            <div class="grid-item">
+                <p class="p1">WHATEVER! AN ACTIVITY BOOK FOR 90S KIDS</p>
+                <p class="p2"> SHOP NOW</p>
+                <img class="prod" src="Images/whatever.webp">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="welcomepara">
+            <h1>HELLO, WELCOME TO BOREDWALK</h1><br>
+            <p>
+                <b>Thanks for stopping by!</b> Whether you arrived here by accident or intent, we're happy to see you!
+                <br><br>
+                <br>
+                Boredwalk was born out of a restless creative spirit, which is why <b>we're constantly adding fun new activity books, party games, and apparel designs and styles </b> to our collections, from super-soft tees for him, her, them, and the little ones, to extraordinarily comfy fashion fleece, scoops, racer back tanks, and v-necks for the ladies. Not to be outdone, be sure to check out our collection of unisex tank tops, hoodies, and crew-neck sweatshirts!
+                <br><br>
+                And if that weren't enough, we offer it all with peerless customer service, an affordable price tag, and <b>free shipping on orders of $65+ & free exchanges within the U.S.</b> You lucky so-and-so, you!
+                <br><br>
+                <b>Be sure to also subscribe to our email list with the handy subscription field at the bottom of the page!</b>
+                <br><br>
+                We know, we know — you need more marketing emails in your inbox like T-Swift needs more #1 albums — but our emails are super-fun!
+                <br><br>
+                Not only are they where we share new product releases and info about special sales & discounts, but they're also loaded with useless historical trivia & celebrity birthdays, links to amusing content from around the web, and rambling musings from our co-founders!
+                <br>
+                <br><br>
+                And if you're looking to save a few bucks on your order, <b>check out our current promotions & discount codes </b> <a href="https://www.boredwalk.com/pages/boredwalk-coupon-codes-promo-codes-and-discounts">here.</a>
+                <br><br>
+                <br>
+                <b>And if all that isn't enough of our weird brand of humor and design aesthetic for you, check out our</b> <a href="https://www.youtube.com/c/boredwalk">YouTube </a> channel for our hilarious, shocking, and fun storytelling series <b>Delve Deck Stories!</b> 
+                <br><br>
+                <br>
+                New episodes drop weekly and feature members of our content team — Tess Menzies, Ansley Hutchinson, and Gabe Sanchez — reading & reacting to stories inspired by the questions in our <a href="https://www.boredwalk.com/collections/delve-deck">Delve Deck conversation card sets and on our Delve Deck beach balls!</a>
+                <br><br>
+                <br>
+                It's a great way to see the kind of funny, insightful, and interesting conversations the Delve Deck product line can help YOU have with your friends, family, co-workers, and students!
+            </p>
+        </div>
+
+
+        <hr>
+
+
+        <section class="container">
+            <h1 class="title">JOURNALS AND NOTEBOOKS</h1>
+            <a href="#" class="view-all">View All</a>
+            <p class="subtitle">
+                Our fun books, games, journals, and notebooks make great gifts for fans of humor, analog entertainment, and great design.
+            </p>
+            <div class="carousel">
+                <div class="products" id="journalsSlider">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                    <span class="sale-badge">Sale</span>
+                    <img src="Images/activitybooks.webp">
+                    <div class="product-title">Activity Books Kit</div>
+                    <div class="product-price">
+                        <span class="current-price">$ 51.00</span>
+                        <span class="old-price">$ 60.00</span>
+                    </div>
+                </div>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                    <span class="sale-badge">Sale</span>
+                    <img src="Images/delvedeckbundle.webp">
+                    <div class="product-title">Delve Deck - Complete Bundle</div>
+                    <div class="product-price">
+                        <span class="current-price">$ 75.68</span>
+                        <span class="old-price">$ 88.00</span>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="Images/goodcompanybook.webp">
+                    <div class="product-title">Good Company Guest Book - Celebrating Every Visit</div>
+                    <div class="product-price">
+                        <span class="current-price">$ 24.00</span>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="Images/whatever.webp">
+                    <div class="product-title">Whatever! An Activity Book For 90s Kids</div>
+                    <div class="product-price">
+                        <span class="current-price">$ 20.00</span>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <img src="Images/grievancejournal.webp">
+                    <div class="product-title">Grievance Journal</div>
+                    <div class="product-price">
+                        <span class="current-price">$ 28.00</span>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                <img src="Images/bloodythirstybook.webp">
+                <div class="product-title">Bloodthirsty and Bewitched: An Activity Book for Strange and Unusual Adults</div>
+                <div class="product-price">
+                    <span class="current-price">$ 20.00</span>
+                </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <span class="sale-badge">Sale</span>
+                    <img src="Images/bundle.webp">
+                    <div class="product-title">Activity Books + Delve Deck Bundle</div>
+                    <div class="product-price">
+                        <span class="current-price">$ 78.00</span>
+                        <span class="old-price">$ 92.00</span>
+                    </div>
+                </div>
+
+
+                </div>
+        </div>
+            <button class="leftnextbtn2" data-slider="journalsSlider">&#8249;</button>  
+            <button class="rightnextbtn2" data-slider="journalsSlider">&#8250;</button>
+        </section>
+
+        <hr>
+
+
+        <section class="container2">
+            <h1 class="title2">MENS TSHIRTS</h1>
+            <a href="#" class="view-all2">View All</a>
+            <p class="subtitle2">
+                Our stylish mens t-shirts feature a unisex fit and run true to size. We print on soft, light weight, ringspun cotton using eco-friendly water-based inks. All of our items are designed and hand-printed to order in our southern California studio.
+            </p>
+            <div class="carousel2">
+            <div class="products2" id="productSlider2">
+                    <!-- Product 1 -->
+                    <div class="product-card2">
+                        <img class="tshirt-image" src="Men-tshirts/femalegaze.webp">
+                        <div class="product-title">Men's FemaleGaze T-shirt</div>
+                        <div class="product-price">$ 32.00</div>
+                        <div class="color-options">
+                        <span class="color-dot" style="background:#111"></span>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                <div class="product-card2">
+                    <img class="tshirt-image" src="Men-tshirts/livingokayest.webp">
+                    <div class="product-title">Men's Living My Okayest Life T-Shirt</div>
+                    <div class="product-price">$ 32.00</div>
+                    <div class="color-options">
+                    <span class="color-dot" style="background:#111" ></span>
+                    <span class="color-dot" style="background:#888"></span>
+                    <span class="color-dot" style="background:#2d3956"></span>
+                    </div>
+                </div>
+                    <!-- Product 3 -->
+                <div class="product-card2">
+                    <img class="tshirt-image" src="Men-tshirts/everythingterrible.webp">
+                    <div class="product-title">Men's Living My Okayest Life T-Shirt</div>
+                    <div class="product-price">$ 32.00</div>
+                    <div class="color-options">
+                    <span class="color-dot" style="background:#111"></span>
+                    <span class="color-dot" style="background:#888"></span>
+                    <span class="color-dot" style="background:#2d3956"></span>
+                    <span class="color-dot" style="background:#135b25"></span>
+                    <span class="color-dot" style="background:#2caeff"></span>
+                    </div>
+                </div>
+                    <!-- Product 4 -->
+                <div class="product-card2">
+                    <img class="tshirt-image" src="Men-tshirts/banfascistssavebooks.webp">
+                    <div class="product-title">Men's Living My Okayest Life T-Shirt</div>
+                    <div class="product-price">$ 32.00</div>
+                    <div class="color-options">
+                    <span class="color-dot" style="background:#111"></span>
+                    <span class="color-dot" style="background:#888"></span>
+                    <span class="color-dot" style="background:#2d3956"></span>
+                    <span class="color-dot" style="background:#135b25"></span>
+                    <span class="color-dot" style="background:#2caeff"></span>
+                    </div>
+                </div>
+                    <!-- Product 5 -->
+                <div class="product-card2">
+                    <img class="tshirt-image" src="Men-tshirts/oxfordcomma.webp">
+                    <div class="product-title">Men's Oxford Comma Appreciation Society T-Shirt</div>
+                    <div class="product-price">$ 32.00</div>
+                    <div class="color-options">
+                    <span class="color-dot" style="background:#111"></span>
+                    <span class="color-dot" style="background:#888"></span>
+                    <span class="color-dot" style="background:#2caeff"></span>
+                    </div>
+                </div>
+                    <!-- Product 6 -->
+                <div class="product-card2">
+                    <img class="tshirt-image" src="Men-tshirts/finethanks.webp">
+                    <div class="product-title">Men's Fine Thanks T-Shirt</div>
+                    <div class="product-price">$ 32.00</div>
+                    <div class="color-options">
+                    <span class="color-dot" style="background:#111"></span>
+                    </div>
+                </div>
+                    <!-- Product 7 -->
+                <div class="product-card2">
+                    <img class="tshirt-image" src="Men-tshirts/everythingtrash.webp">
+                    <div class="product-title">Men's Fine Thanks T-Shirt</div>
+                    <div class="product-price">$ 32.00</div>
+                    <div class="color-options">
+                    <span class="color-dot" style="background:#111"></span>
+                    </div>
+                </div>
+
+            </div>
+            <button class="leftnextbtn3">&#8249;</button>  
+            <button class="rightnextbtn3">&#8250;</button>
+</section>
+
+<hr>
+
+        <section class="container">
+            <h1 class="title">MESSENGER BAGS</h1>
+            <a href="#" class="view-all">View All</a>
+            <p class="subtitle">
+                This stylish sturdy messenger bags are made of 14 oz 100% cotton canvas. Enzyme washed with frayed edges for a distressed vintage aesthetic. Each bag features an adjustable shoulder strap, which can be adjusted between 33.5 and 58 inches. They also feature a spacious main compartment with a large flap that seals with magnetic snaps. Loaded with storage compartments, the bags feature a smaller interior zippered compartment and an additional zippered compartment on the exterior. Each side of these satchels also features smaller pockets with magnetic snaps. You'll love all the extra pockets and compartments for keeping your gear organized.
+            </p>
+            <div class="carousel">
+            <div class="products" id="messengerSlider">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                    <img src="Messengerbags/b1.webp">
+                    <div class="product-title">Support Your Local Library Messenger Bag</div>
+                    <div class="product-price">
+                        <span class="current-price">$ 64.00</span>
+                    </div>
+                        <div class="color-options">
+                            <span class="color-dot" style="background:#111"></span>
+                    </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                    <img src="Messengerbags/b2.webp">
+                    <div class="product-title">Nolite Te Bastardes Carborundorum Messenger Bag</div>
+                    <div class="product-price">
+                        <span class="current-price">$ 64.00</span>
+                    </div>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111"></span>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                    <img src="Messengerbags/b3.webp">
+                    <div class="product-title">Ban The Fascists Save The Books Messenger Bag</div>
+                    <div class="product-price">
+                        <span class="current-price">$ 64.00</span>
+                    </div>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111"></span>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                    <img src="Messengerbags/b4.webp">
+                    <div class="product-title">Hell is Other People Messenger Bag</div>
+                    <div class="product-price">
+                        <span class="current-price">$ 64.00</span>
+                    </div>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111"></span>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                    <img src="Messengerbags/b5.webp">
+                    <div class="product-title">Book Nerd Messenger Bag</div>
+                    <div class="product-price">
+                        <span class="current-price">$ 64.00</span>
+                    </div>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111"></span>
+                        <span class="color-dot" style="background:#88632f"></span>
+                        <span class="color-dot" style="background:#135b25"></span>
+                        </div>
+                    </div>
+        </div>
+        <button class="leftnextbtn2" data-slider="messengerSlider">&#8249;</button>  
+        <button class="rightnextbtn2" data-slider="messengerSlider">&#8250;</button>
+    </section>
+
+    <hr>
+
+    <section class="reviews-section">
+        <h2 class="reviews-title">THE REVIEWS ARE IN, AND THEY ARE GLOWING!</h2>
+        <div class="reviews-count">from 8210 reviews</div>
+    
+        <!-- Carousel Controls -->
+        <input type="radio" name="carousel" id="slide1" checked>
+        <input type="radio" name="carousel" id="slide2">
+        <input type="radio" name="carousel" id="slide3">
+        
+        <div class="reviews-cards">
+            <!-- Slide 1 -->
+            <div class="slide slide1">
+            <div class="review-card">
+                <img class="review-img" src="Men-tshirts/supportlibrary.webp">
+                <div class="review-user">Natile Joe <span class="verified-badge">verified</span></div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-title">Size up!</div>
+                <div class="review-text">Very cute tee!!! Sadly it's cut very small. My daughter is giving it to her sister and we'll order another larger size.</div>
+                <div class="review-product">Men's support your local library T-shirt</div>
+                <div class="review-date">05/04/2025</div>
+            </div>
+            <div class="review-card">
+                <img class="review-img" src="Men-tshirts/indoorcat.webp">
+                <div class="review-user">Erica Jones <span class="verified-badge">verified</span></div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-title">This is it</div>
+                <div class="review-text">And is true. I say is a great tshirt I just do not know why people don't comment on it!!</div>
+                <div class="review-product">Men's Indoorsy T-shirt</div>
+                <div class="review-date">09/02/2025</div>
+            </div>
+            <div class="review-card">
+                <img class="review-img" src="Images/cards1.webp">
+                <div class="review-user">Tim Chan <span class="verified-badge">verified</span></div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-title">I absolutely LOVE this deck!!!</div>
+                <div class="review-text">This deck is made up of questions to ask myself, questions to ask my partner....</div>
+                <div class="review-product">Delve Deck</div>
+                <div class="review-date">12/12/2024</div>
+            </div>
+            </div>
+                <!-- Slide 2 -->
+                <div class="slide slide2">
+                    <div class="review-card">
+                    <img class="review-img" src="Men-tshirts/banfascistssavebooks.webp">
+                    <div class="review-user">Alex Kim <span class="verified-badge">verified</span></div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-title">Great quality</div>
+                    <div class="review-text">The shirt is soft and the print is vibrant. Will buy again!</div>
+                    <div class="review-product">Men's Bookworm T-shirt</div>
+                    <div class="review-date">03/15/2025</div>
+                </div>
+                <div class="review-card">
+                    <img class="review-img" src="Men-tshirts/livingokayest-black.webp">
+                    <div class="review-user">Sam Lee <span class="verified-badge">verified</span></div>
+                    <div class="review-stars">★★★★☆</div>
+                    <div class="review-title">Nice but runs large</div>
+                    <div class="review-text">Love the design but the fit is a bit loose for me.</div>
+                    <div class="review-product">Men's livingokayest T-shirt</div>
+                    <div class="review-date">02/10/2025</div>
+                </div>
+                <div class="review-card">
+                    <img class="review-img" src="Messengerbags/b1.webp">
+                    <div class="review-user">Jordan Smith <span class="verified-badge">verified</span></div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-title">Perfect gift</div>
+                    <div class="review-text">Bought this for my friend and he loved it!</div>
+                    <div class="review-product"> Messenger Bag </div>
+                    <div class="review-date">01/02/2025</div>
+                </div>
+            </div>
+            </div>
+            <!-- Carousel Arrows -->
+            <div class="reviews-arrows">
+                <label for="slide1" class="arrow-btn">&lt;</label>
+                <label for="slide2" class="arrow-btn">&gt;</label>
+            </div>
+            <button class="read-more-btn">Read More Reviews</button>
+            </section>
+
+            <hr>
+
+            <section class="oops-wall">
+                <h2 class="oops-title">THE 'OOPS I POSTED AGAIN' WALL</h2>
+
+                <!-- Pinterest -->
+                <a href="https://www.linkedin.com/company/boredwalk/" target="_blank">
+                <img class="social-icon pinterest" src="SocialMediaIcons/pinterest.png">
+                </a>
+                <!-- Linkedln -->
+                <a href="https://www.linkedin.com/company/boredwalk/" target="_blank">
+                <img class="social-icon linkedln" src="SocialMediaIcons/linkedln.png">
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/boredwalk/" target="_blank">
+                <img class="social-icon instagram" src="SocialMediaIcons/insta.png">
+                </a>
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/c/boredwalk" target="_blank">
+                <img class="social-icon youtube" src="SocialMediaIcons/youtube.png">
+                </a>
+                <!-- facebook -->
+                <a href="https://www.facebook.com/boredwalktshirts/" target="_blank">
+                <img class="social-icon facebook" src="SocialMediaIcons/facebook.svg">
+                </a>
+                
+                <!-- Posts Grid -->
+                <div class="oops-grid">
+                    <div class="oops-post">
+                        <video autoplay muted loop>
+                            <source src="socialmedia/video1.mp4">
+                        </video>
+                    </div>
+                    <div class="oops-post">
+                        <img src="socialmedia/img1.png">
+                    </div>
+                    <div class="oops-post">
+                        <img src="socialmedia/img2.png">
+                    </div>
+                    <div class="oops-post">
+                        <img src="socialmedia/img3.png">
+                    </div>
+                    <div class="oops-post">
+                        <video autoplay muted loop>
+                            <source src="socialmedia/video2.mp4">
+                        </video>
+                    </div>
+                    <div class="oops-post">
+                        <video autoplay muted loop>
+                            <source src="socialmedia/Video3.mov">
+                        </video>
+                    </div>
+                    </div>
+                </section>
+
+
+
+                <footer class="footer">
+                    <div class="footer-main">
+                        <div class="footer-col">
+                        <h3>NEED HELP?</h3>
+                        <ul>
+                            <li><a href="#">Shipping info</a></li>
+                            <li><a href="#">Returns / Exchanges</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Wholesale</a></li>
+                            <li><a href="#">Sizing/ Fit info</a></li>
+                            <li><a href="#">Wish List</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Custom Orders</a></li>
+                            <li><a href="#">Ambassador Program</a></li>
+                            <li><a href="#">Boredwalk Coupon Codes</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>ABOUT US</h3>
+                        <ul>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Boredwalk Podcast</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="mailto:hello@boredwalk.com">hello@boredwalk.com</a></li>
+                            <li><a href="tel:8019238337">(801) 923-8337</a></li>
+                            <li>9120 Norwalk Blvd , Santa Fe springs CA 90670</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col news">
+                        <h3>NEWS & UPDATES</h3>
+                        <p>We send funny emails too! Sign up for LOLs in your inbox</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                    </div>
+                    <div class="footer-bottom">
+            
+                    <div class="footer-payments">
+                        <img src="payments/aexp.png">
+                        <img src="payments/applepay.jpg">
+                        <img src="payments/gpay.jpg">
+                        <img src="payments/paypal.png">
+                        <img src="payments/shoppay.png">
+                        <img src="payments/visa.png">
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.tiktok.com/notfound" title="TikTok"> <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
+                        <a href="https://in.pinterest.com/boredwalk/" title="Pinterest"> <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/pinterest.svg" alt="Pinterest"></a>
+                        <a href="https://www.facebook.com/boredwalktshirts" title="Facebook"> <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.facebook.com/boredwalktshirts" title="Twitter"> <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter"></a>
+                        <a href="https://www.youtube.com/c/boredwalk" title="YouTube"> <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
+                        <a href="https://www.linkedin.com/company/boredwalk/" title="LinkedIn"> <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+                        <a href="https://www.instagram.com/boredwalk/" title="Instagram"> <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+                    </div>
+                    <div class="footer-legal"></div>
+                        © 2025 Boredwalk. Graphics, text, designs, and photos on this website are <br> copyrighted and aggressively enforced.
+                    </div>
+                    </div>
+
+                </footer>
+
+        <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale</title>
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<style>
+    body {
+        font-family: 'Inter', Arial, sans-serif;
+        background: #FFFDEB;
+        color: #222;
+        padding-top: 100px;
+    }
+    
+    h1 {
+        margin-top: 80px;
+        text-align: center;
+        color: rgb(86, 85, 85);
+    }
+    
+    p {
+        text-align: center;
+        color: rgb(136, 136, 136);
+        font-size: 20px;
+    }
+    
+    .products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        padding: 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    .product-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        padding: 20px;
+        position: relative;
+        text-align: center;
+        transition: box-shadow 0.2s, transform 0.2s;
+    }
+    
+    .product-card:hover {
+        box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+        transform: translateY(-5px);
+    }
+    
+    .sale-badge {
+        position: absolute;
+        left: 18px;
+        top: 18px;
+        background: #222;
+        color: #fff;
+        font-size: 1rem;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
+    
+    .product-card img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 18px;
+    }
+    
+    .product-title {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    .product-price {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+    
+    .current-price {
+        color: #222;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    
+    .old-price {
+        color: #aaa;
+        text-decoration: line-through;
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+        body {
+            padding-top: 80px;
+        }
+        
+        .products {
+            gap: 20px;
+            padding: 15px;
+        }
+        
+        .product-card {
+            padding: 15px;
+        }
+        
+        .sale-badge {
+            font-size: 0.9rem;
+            padding: 3px 10px;
+        }
+        
+        .product-title {
+            font-size: 1rem;
+        }
+        
+        .product-price {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        body {
+            padding-top: 60px;
+        }
+        
+        .products {
+            gap: 15px;
+            padding: 10px;
+        }
+        
+        .product-card {
+            padding: 12px;
+        }
+        
+        .product-card img {
+            margin-bottom: 12px;
+        }
+        
+        .sale-badge {
+            font-size: 0.8rem;
+            padding: 2px 8px;
+        }
+    }
+</style>
+<body>
+    <div class="top-bar">
+        FREE U.S SHIPPING ON $65+ ORDERS
+    </div>
+    <div class="header">
+        <div class="logo">
+            <img src="Images/logo.jpeg" class="logo-img">
+        </div>
+        <nav class="nav">
+                <div class="nav-item">
+                GIFTS+ACCESSORIES
+                <div class="dropdown">
+                    <a href="#">Books + Games</a>
+                    <a href="Stickers.html">Stickers</a>
+                    <a href="dishtowels.html">Kitchen Stuff</a>
+                    <a href="messengerbags.html">Messenger Bags</a>
+                    <a href="#">Tote Bags</a>
+                    <a href="sale.html">Clearance</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                MENS
+                <div class="dropdown">
+                    <a href="#">Mens TShirts</a>
+                    <a href="unisextanktops.html">Unisex Tank Tops</a>
+                    <a href="unisexhoodies.html">Unisex Hoodies</a>
+                    <a href="#">Unisex Fleece Sweatshirts</a>
+                    <a href="sale.html">Clearance</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                LADIES
+                <div class="dropdown">
+                    <a href="#">Ladies Tees</a>
+                    <a href="unisextanktops.html">Unisex Tank Tops</a>
+                    <a href="unisexhoodies.html">Unisex Hoodies</a>
+                    <a href="#">Unisex Fleece Sweatshirts</a>
+                    <a href="sale.html">Clearance</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                KIDS
+                <div class="dropdown">
+                    <a href="#">All Kids</a>
+                    <a href="#">Boy's Tees</a>
+                    <a href="#">Girl's Tees</a>
+                    <a href="#">Infant Bodysuits</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                SHOP BY THEME
+                <div class="dropdown">
+                    <a href="#">Best Sellers</a>
+                    <a href="#">Dark Humor</a>
+                    <a href="#">Book Lover</a>
+                    <a href="#">Food + Drink</a>
+                    <a href="#">Mental Health</a>
+                    <a href="#">Introvert</a>
+                    <a href="#">Funny Animals</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                ABOUT/HELP
+                <div class="dropdown">
+                    <a href="#">Our Story</a>
+                    <a href="#">Podcast</a>
+                    <a href="#">Custom Orders</a>
+                    <a href="#">Reviews</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Wishlist</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                </div>
+            </nav>
+    
+    
+        <div class="header-icons">
+                <div class="icon">
+                    <!-- home icon -->
+                    <a href="index.html" class="icon home" title="Home">
+                        <svg width="40" height="40" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 30 L32 10 L56 30" /> <!-- roof -->
+                            <rect x="20" y="30" width="24" height="24" rx="2" ry="2" /> <!-- house -->
+                        </svg>
+                    </a>
+                </div>
+                    <!-- Search Icon -->
+                    <div class="icon search-icon">
+                        <svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="#fff" stroke-width="4">
+                            <circle cx="28" cy="28" r="20"/>
+                            <line x1="44" y1="44" x2="60" y2="60"/>
+                        </svg>
+                    </div>
+                    <!-- Search Modal -->
+                    <div id="searchModal" class="search-modal">
+                        <div class="search-container">
+                            <div class="search-header">
+                                <input type="text" id="searchInput" placeholder="Search products...">
+                                <button class="close-search">&times;</button>
+                            </div>
+                            <div class="search-filters">
+                                <select id="categoryFilter">
+                                    <option value="">All Categories</option>
+                                    <option value="hoodies">Hoodies</option>
+                                    <option value="tanktops">Tank Tops</option>
+                                    <option value="stickers">Stickers</option>
+                                    <option value="messengerbags">Messenger Bags</option>
+                                    <option value="dishtowels">Dish Towels</option>
+                                </select>
+                                <div class="price-filter">
+                                    <input type="number" id="minPrice" placeholder="Min Price">
+                                    <input type="number" id="maxPrice" placeholder="Max Price">
+                                </div>
+                            </div>
+                            <div id="searchResults" class="search-results"></div>
+                        </div>
+                    </div>
+                    <div class="icon">
+                    <!-- Heart Icon -->
+                    <svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="#fff" stroke-width="4">
+                        <path d="M32 56s-20-12.8-20-26.4C12 18.4 24 12 32 24c8-12 20-5.6 20 5.6C52 43.2 32 56 32 56z"/>
+                    </svg>
+                    </div>
+                    <div class="icon">
+                    <!-- User Icon -->
+                    <svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="#fff" stroke-width="4">
+                        <circle cx="32" cy="24" r="12"/>
+                        <path d="M12 56c0-11 40-11 40 0"/>
+                    </svg>
+                    </div>
+                    <!-- Bag Icon -->
+                    <div class="icon bag">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="16" y="20" width="32" height="32" rx="6" ry="6" />
+                        <path d="M24 20v-6a8 8 0 0 1 16 0v6" />
+                        </svg>
+                    </div>
+        </div>
+        </div>
+    <h1>SALE! SALE! SALE!</h1>
+            <p>
+                Our prices are lower than your motivation on Mondays.
+            </p>
+    <div class="products">
+        <div class="product-card">
+        <span class="sale-badge">Sale</span>
+        <img src="Images/activitybooks.webp">
+        <div class="product-title">Activity Books Kit</div>
+        <div class="product-price">
+            <span class="current-price">$ 51.00</span>
+            <span class="old-price">$ 60.00</span>
+        </div>
+    </div>
+
+        <div class="product-card">
+        <span class="sale-badge">Sale</span>
+        <img src="Images/delvedeckbundle.webp">
+        <div class="product-title">Delve Deck - Complete Bundle</div>
+        <div class="product-price">
+            <span class="current-price">$ 75.68</span>
+            <span class="old-price">$ 88.00</span>
+        </div>
+    </div>
+        <div class="product-card">
+        <span class="sale-badge">Sale</span>
+        <img src="Images/bloodythirstybook.webp">
+        <div class="product-title">Bloody Thirsty Book</div>
+        <div class="product-price">
+            <span class="current-price">$ 15.00</span>
+            <span class="old-price">$ 20.00</span>
+        </div>
+    </div>
+        <div class="product-card">
+        <span class="sale-badge">Sale</span>
+        <img src="Images/whatever.webp">
+        <div class="product-title">Whatever! An Activity Book for 90s Kids</div>
+        <div class="product-price">
+            <span class="current-price">$ 5.00</span>
+            <span class="old-price">$ 20.00</span>
+        </div>
+    </div>
+        <div class="product-card">
+        <span class="sale-badge">Sale</span>
+        <img src="Stickers/s1.webp">
+        <div class="product-title">Ban The Fascists Save The Books Die Cut Sticker</div>
+        <div class="product-price">
+            <span class="current-price">$ 2.68</span>
+            <span class="old-price">$ 5.99</span>
+        </div>
+    </div>
+        <div class="product-card">
+        <span class="sale-badge">Sale</span>
+        <img src="Stickers/s2.webp">
+        <div class="product-title">Persist Out Of Spite Tiger Die Cut Sticker</div>
+        <div class="product-price">
+            <span class="current-price">$ 2.68</span>
+            <span class="old-price">$ 5.99</span>
+        </div>
+    </div>
+        <div class="product-card">
+        <span class="sale-badge">Sale</span>
+        <img src="Images/bundle.webp">
+        <div class="product-title">Complete Bundle</div>
+        <div class="product-price">
+            <span class="current-price">$ 68.68</span>
+            <span class="old-price">$ 88.00</span>
+        </div>
+    </div>
+        <div class="product-card">
+        <span class="sale-badge">Sale</span>
+        <img src="Images/grievancejournal.webp">
+        <div class="product-title">Grievance Journal</div>
+        <div class="product-price">
+            <span class="current-price">$ 20.00</span>
+            <span class="old-price">$ 45.00</span>
+        </div>
+    </div>
+        <div class="product-card">
+        <span class="sale-badge">Sale</span>
+        <img src="Messengerbags/b1.webp">
+        <div class="product-title">Support Your Local Library Messenger Bag</div>
+        <div class="product-price">
+            <span class="current-price">$ 55.68</span>
+            <span class="old-price">$ 64.00</span>
+        </div>
+    </div>
+        <div class="product-card">
+        <span class="sale-badge">Sale</span>
+        <img src="Messengerbags/b2.webp">
+        <div class="product-title">Nolite Te Bastardes Carborundorum Messenger Bag</div>
+        <div class="product-price">
+            <span class="current-price">$ 55.68</span>
+            <span class="old-price">$ 64.00</span>
+        </div>
+    </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+        window.onload = function() {
+            const duration = 3 * 1000; 
+            const end = Date.now() + duration;
+
+            (function frame() {
+            confetti({
+                particleCount: 7,
+                angle: 60,
+                spread: 55,
+                origin: { x: 0 }
+            });
+            confetti({
+                particleCount: 7,
+                angle: 120,
+                spread: 55,
+                origin: { x: 1 }
+            });
+
+            if (Date.now() < end) {
+                requestAnimationFrame(frame);
+            }
+            })();
+        };
+</script>
+</body>
+</html>

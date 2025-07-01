@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unisex Tank Tops</title>
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<style>
+    body {
+        color: rgb(102, 102, 102);
+    }
+    
+    h1 {
+        text-align: center;
+        display: block;
+        color: rgb(89, 89, 89);
+        margin-bottom: 0;
+    }
+    
+    p {
+        color: lightslategray;
+        font-size: 20px;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .filters {
+        width: 100%;
+        text-align: left;
+        margin-top: 20px;
+    }
+    
+    .products {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .product {
+        border: 1px solid #ccc;
+        padding: 15px;
+        text-align: center;
+        background-color: white;
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .product img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+    }
+    
+    .product:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        
+        .filters {
+            width: 20%;
+            margin-top: 20%;
+        }
+        
+        .products {
+            width: 80%;
+        }
+    }
+</style>
+<body>
+    <div class="top-bar">
+        FREE U.S SHIPPING ON $65+ ORDERS
+    </div>
+    <div class="header">
+        <div class="logo">
+            <img src="Images/logo.jpeg" class="logo-img">
+        </div>
+        <nav class="nav">
+                <div class="nav-item">
+                GIFTS+ACCESSORIES
+                <div class="dropdown">
+                    <a href="#">Books + Games</a>
+                    <a href="Stickers.html">Stickers</a>
+                    <a href="dishtowels.html">Kitchen Stuff</a>
+                    <a href="messengerbags.html">Messenger Bags</a>
+                    <a href="#">Tote Bags</a>
+                    <a href="sale.html">Clearance</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                MENS
+                <div class="dropdown">
+                    <a href="#">Mens TShirts</a>
+                    <a href="unisextanktops.html">Unisex Tank Tops</a>
+                    <a href="unisexhoodies.html">Unisex Hoodies</a>
+                    <a href="#">Unisex Fleece Sweatshirts</a>
+                    <a href="sale.html">Clearance</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                LADIES
+                <div class="dropdown">
+                    <a href="#">Ladies Tees</a>
+                    <a href="unisextanktops.html">Unisex Tank Tops</a>
+                    <a href="unisexhoodies.html">Unisex Hoodies</a>
+                    <a href="#">Unisex Fleece Sweatshirts</a>
+                    <a href="sale.html">Clearance</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                KIDS
+                <div class="dropdown">
+                    <a href="#">All Kids</a>
+                    <a href="#">Boy's Tees</a>
+                    <a href="#">Girl's Tees</a>
+                    <a href="#">Infant Bodysuits</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                SHOP BY THEME
+                <div class="dropdown">
+                    <a href="#">Best Sellers</a>
+                    <a href="#">Dark Humor</a>
+                    <a href="#">Book Lover</a>
+                    <a href="#">Food + Drink</a>
+                    <a href="#">Mental Health</a>
+                    <a href="#">Introvert</a>
+                    <a href="#">Funny Animals</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                ABOUT/HELP
+                <div class="dropdown">
+                    <a href="#">Our Story</a>
+                    <a href="#">Podcast</a>
+                    <a href="#">Custom Orders</a>
+                    <a href="#">Reviews</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Wishlist</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                </div>
+            </nav>
+    
+    
+        <div class="header-icons">
+                <div class="icon">
+                    <!-- home icon -->
+                    <a href="index.html" class="icon home" title="Home">
+                        <svg width="40" height="40" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 30 L32 10 L56 30" /> <!-- roof -->
+                            <rect x="20" y="30" width="24" height="24" rx="2" ry="2" /> <!-- house -->
+                        </svg>
+                    </a>
+                </div>
+                    <!-- Search Icon -->
+                    <div class="icon search-icon">
+                        <svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="#fff" stroke-width="4">
+                            <circle cx="28" cy="28" r="20"/>
+                            <line x1="44" y1="44" x2="60" y2="60"/>
+                        </svg>
+                    </div>
+                    <!-- Search Modal -->
+                    <div id="searchModal" class="search-modal">
+                        <div class="search-container">
+                            <div class="search-header">
+                                <input type="text" id="searchInput" placeholder="Search products...">
+                                <button class="close-search">&times;</button>
+                            </div>
+                            <div class="search-filters">
+                                <select id="categoryFilter">
+                                    <option value="">All Categories</option>
+                                    <option value="hoodies">Hoodies</option>
+                                    <option value="tanktops">Tank Tops</option>
+                                    <option value="stickers">Stickers</option>
+                                    <option value="messengerbags">Messenger Bags</option>
+                                    <option value="dishtowels">Dish Towels</option>
+                                </select>
+                                <div class="price-filter">
+                                    <input type="number" id="minPrice" placeholder="Min Price">
+                                    <input type="number" id="maxPrice" placeholder="Max Price">
+                                </div>
+                            </div>
+                            <div id="searchResults" class="search-results"></div>
+                        </div>
+                    </div>
+                    <div class="icon">
+                    <!-- Heart Icon -->
+                    <svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="#fff" stroke-width="4">
+                        <path d="M32 56s-20-12.8-20-26.4C12 18.4 24 12 32 24c8-12 20-5.6 20 5.6C52 43.2 32 56 32 56z"/>
+                    </svg>
+                    </div>
+                    <div class="icon">
+                    <!-- User Icon -->
+                    <a href="Profile.html">
+                    <svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="#fff" stroke-width="4">
+                        <circle cx="32" cy="24" r="12"/>
+                        <path d="M12 56c0-11 40-11 40 0"/>
+                    </svg>
+                    </a>
+                    </div>
+                    <!-- Bag Icon -->
+                    <div class="icon bag">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="16" y="20" width="32" height="32" rx="6" ry="6" />
+                        <path d="M24 20v-6a8 8 0 0 1 16 0v6" />
+                        </svg>
+                    </div>
+        </div>
+        </div>
+
+
+    <div class="container">
+        <aside class="filters">
+            <h2>Filters</h2>
+            <h3>Color</h3>
+            <label><input type="checkbox" class="filter" value="Black"> Black</label><br>
+            <label><input type="checkbox" class="filter" value="Heather"> Heather</label><br>
+            <label><input type="checkbox" class="filter" value="Navy"> Navy</label><br>
+            <label><input type="checkbox" class="filter" value="Red">Red</label><br>
+            <label><input type="checkbox" class="filter" value="Royal"> Royal</label><br>
+            <label><input type="checkbox" class="filter" value="White"> White</label><br>
+
+            <h3>Product Type</h3>
+            <label><input type="checkbox" class="filter" value="Unisex Tank Top"> Unisex Tank Top</label><br>
+        </aside>
+        
+        <main class="products">
+            <h1>Unisex Tank Top</h1>
+            <p>Our unisex tank tops made made of soft, light weight ringspun cotton. We print our designs using eco-friendly water-based inks. All of our items 
+                <br>
+                are designed and hand-printed to order in our southern California studio.
+            </p>
+            <div class="product-list">
+                <div class="product" data-color="Black Navy Royal White">
+                    <img src="UnisexTankTops/t1.webp">
+                    <h4>Unisex Someday We'll All Be Dead Tank Top</h4>
+                    <p>$32.00</p>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111" ></span>
+                        <span class="color-dot" style="background:#22225b"></span>
+                        <span class="color-dot" style="background:#49a4e5"></span>
+                        <span class="color-dot" style="background:#ffffff"></span>
+                    </div>
+                </div>
+                <div class="product" data-color="Black">
+                    <img src="UnisexTankTops/t2.webp">
+                    <h4>Unisex Everything is Trash Raccoon Tank Top</h4>
+                    <p>$32.00</p>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111" ></span>
+                    </div>
+                </div>
+                <div class="product" data-color="Black">
+                    <img src="UnisexTankTops/t3.webp">
+                    <h4>Unisex The Female Gaze Medusa Tank Top</h4>
+                    <p>$32.00</p>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111" ></span>
+                    </div>
+                </div>
+                <div class="product" data-color="Black Navy Royal White Heather Red">
+                    <img src="UnisexTankTops/t4.webp">
+                    <h4>Unisex Feminist is My Second Favorite F Word Tank Top</h4>
+                    <p>$32.00</p>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111" ></span>
+                        <span class="color-dot" style="background:#22225b"></span>
+                        <span class="color-dot" style="background:#49a4e5"></span>
+                        <span class="color-dot" style="background:#ffffff"></span>
+                        <span class="color-dot" style="background:#951515"></span>
+                        <span class="color-dot" style="background:#a29f9f"></span>
+                    </div>
+                </div>
+                <div class="product" data-color="Black">
+                    <img src="UnisexTankTops/t5.webp">
+                    <h4>Unisex Fine Thanks Tank Top</h4>
+                    <p>$32.00</p>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111" ></span>
+                    </div>
+                </div>
+                <div class="product" data-color="Black White">
+                    <img src="UnisexTankTops/t6.webp">
+                    <h4>Unisex Nolite Te Bastardes Carborundorum Tank Top</h4>
+                    <p>$32.00</p>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111" ></span>
+                        <span class="color-dot" style="background:#ffffff" ></span>
+                    </div>
+                </div>
+                <div class="product" data-color="Black Navy White">
+                    <img src="UnisexTankTops/t7.webp">
+                    <h4>Unisex Living My Okayest Life Tank Top</h4>
+                    <p>$32.00</p>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111" ></span>
+                        <span class="color-dot" style="background:#22225b"></span>
+                        <span class="color-dot" style="background:#ffffff"></span>
+                    </div>
+                </div>
+                <div class="product" data-color="Black Navy">
+                    <img src="UnisexTankTops/t8.webp">
+                    <h4>Unisex Ban The Fascists Save The Books Tank Top</h4>
+                    <p>$32.00</p>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111" ></span>
+                        <span class="color-dot" style="background:#22225b"></span>
+                    </div>
+                </div>
+                <div class="product" data-color="Black Navy White">
+                    <img src="UnisexTankTops/t9.webp">
+                    <h4>Unisex Support Your Local Library Tank Top</h4>
+                    <p>$32.00</p>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111" ></span>
+                        <span class="color-dot" style="background:#22225b"></span>
+                        <span class="color-dot" style="background:#ffffff"></span>
+                    </div>
+                </div>
+                <div class="product" data-color="Black White">
+                    <img src="UnisexTankTops/t10.webp">
+                    <h4>Unisex Fleur Fatale Toxic Botanical Chart Tank Top</h4>
+                    <p>$32.00</p>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111" ></span>
+                        <span class="color-dot" style="background:#ffffff"></span>
+                    </div>
+                </div>
+                <div class="product" data-color="Black Navy Royal White">
+                    <img src="UnisexTankTops/t11.webp">
+                    <h4>Unisex Maybe Tomorrow Satan Tank Top</h4>
+                    <p>$32.00</p>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111" ></span>
+                        <span class="color-dot" style="background:#22225b"></span>
+                        <span class="color-dot" style="background:#49a4e5"></span>
+                        <span class="color-dot" style="background:#ffffff"></span>
+                    </div>
+                </div>
+                <div class="product" data-color="Black Navy Royal Red Heather White">
+                    <img src="UnisexTankTops/t12.webp">
+                    <h4>Unisex What Kind of Wine Goes with Smashing the Patriarchy? Tank Top Funny Feminist Shirt</h4>
+                    <p>$32.00</p>
+                    <div class="color-options">
+                        <span class="color-dot" style="background:#111" ></span>
+                        <span class="color-dot" style="background:#22225b"></span>
+                        <span class="color-dot" style="background:#49a4e5"></span>
+                        <span class="color-dot" style="background:#ffffff"></span>
+                        <span class="color-dot" style="background:#951515"></span>
+                        <span class="color-dot" style="background:#a29f9f"></span>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+        
+    
+    const checkboxes = document.querySelectorAll(".filter");
+    const products = document.querySelectorAll(".product");
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener("change", () => {
+            
+            const activeFilters = Array.from(checkboxes)
+                .filter(cb => cb.checked)
+                .map(cb => cb.value.toLowerCase());
+
+            
+            products.forEach(product => {
+                const data = (product.getAttribute("data-color") + " " + (product.getAttribute("data-type") || "")).toLowerCase();
+
+                const matches = activeFilters.every(filter => data.includes(filter));
+
+                if (activeFilters.length === 0 || matches) {
+                    product.style.display = "block";
+                } else {
+                    product.style.display = "none";
+                }
+            });
+        });
+    });
+
+
+    </script>
+</body>
+</html>

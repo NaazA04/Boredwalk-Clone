@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="learnmore.css">
+</head>
+<body>
+    <div class="top-bar">
+        FREE U.S SHIPPING ON $65+ ORDERS
+    </div>
+    <div class="header">
+        <div class="logo">
+            <img src="Images/logo.jpeg" class="logo-img">
+        </div>
+        <nav class="nav">
+                <div class="nav-item">
+                GIFTS+ACCESSORIES
+                <div class="dropdown">
+                    <a href="#">Books + Games</a>
+                    <a href="Stickers.html">Stickers</a>
+                    <a href="dishtowels.html">Kitchen Stuff</a>
+                    <a href="messengerbags.html">Messenger Bags</a>
+                    <a href="#">Tote Bags</a>
+                    <a href="sale.html">Clearance</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                MENS
+                <div class="dropdown">
+                    <a href="#">Mens TShirts</a>
+                    <a href="unisextanktops.html">Unisex Tank Tops</a>
+                    <a href="unisexhoodies.html">Unisex Hoodies</a>
+                    <a href="#">Unisex Fleece Sweatshirts</a>
+                    <a href="sale.html">Clearance</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                LADIES
+                <div class="dropdown">
+                    <a href="#">Ladies Tees</a>
+                    <a href="unisextanktops.html">Unisex Tank Tops</a>
+                    <a href="unisexhoodies.html">Unisex Hoodies</a>
+                    <a href="#">Unisex Fleece Sweatshirts</a>
+                    <a href="sale.html">Clearance</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                KIDS
+                <div class="dropdown">
+                    <a href="#">All Kids</a>
+                    <a href="#">Boy's Tees</a>
+                    <a href="#">Girl's Tees</a>
+                    <a href="#">Infant Bodysuits</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                SHOP BY THEME
+                <div class="dropdown">
+                    <a href="#">Best Sellers</a>
+                    <a href="#">Dark Humor</a>
+                    <a href="#">Book Lover</a>
+                    <a href="#">Food + Drink</a>
+                    <a href="#">Mental Health</a>
+                    <a href="#">Introvert</a>
+                    <a href="#">Funny Animals</a>
+                </div>
+                </div>
+            
+                <div class="nav-item">
+                ABOUT/HELP
+                <div class="dropdown">
+                    <a href="#">Our Story</a>
+                    <a href="#">Podcast</a>
+                    <a href="#">Custom Orders</a>
+                    <a href="#">Reviews</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Wishlist</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                </div>
+            </nav>
+    
+    
+        <div class="header-icons">
+                <div class="icon">
+                    <!-- home icon -->
+                    <a href="index.html" class="icon home" title="Home">
+                        <svg width="40" height="40" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 30 L32 10 L56 30" /> <!-- roof -->
+                            <rect x="20" y="30" width="24" height="24" rx="2" ry="2" /> <!-- house -->
+                        </svg>
+                    </a>
+                </div>
+                    <!-- Search Icon -->
+                    <div class="icon search-icon">
+                        <svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="#fff" stroke-width="4">
+                            <circle cx="28" cy="28" r="20"/>
+                            <line x1="44" y1="44" x2="60" y2="60"/>
+                        </svg>
+                    </div>
+                    <!-- Search Modal -->
+                    <div id="searchModal" class="search-modal">
+                        <div class="search-container">
+                            <div class="search-header">
+                                <input type="text" id="searchInput" placeholder="Search products...">
+                                <button class="close-search">&times;</button>
+                            </div>
+                            <div class="search-filters">
+                                <select id="categoryFilter">
+                                    <option value="">All Categories</option>
+                                    <option value="hoodies">Hoodies</option>
+                                    <option value="tanktops">Tank Tops</option>
+                                    <option value="stickers">Stickers</option>
+                                    <option value="messengerbags">Messenger Bags</option>
+                                    <option value="dishtowels">Dish Towels</option>
+                                </select>
+                                <div class="price-filter">
+                                    <input type="number" id="minPrice" placeholder="Min Price">
+                                    <input type="number" id="maxPrice" placeholder="Max Price">
+                                </div>
+                            </div>
+                            <div id="searchResults" class="search-results"></div>
+                        </div>
+                    </div>
+                    <div class="icon">
+                    <!-- Heart Icon -->
+                    <svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="#fff" stroke-width="4">
+                        <path d="M32 56s-20-12.8-20-26.4C12 18.4 24 12 32 24c8-12 20-5.6 20 5.6C52 43.2 32 56 32 56z"/>
+                    </svg>
+                    </div>
+                    <div class="icon">
+                    <!-- User Icon -->
+                    <a href="Profile.html">
+                    <svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="#fff" stroke-width="4">
+                        <circle cx="32" cy="24" r="12"/>
+                        <path d="M12 56c0-11 40-11 40 0"/>
+                    </svg>
+                    </a>
+                    </div>
+                    <!-- Bag Icon -->
+                    <div class="icon bag">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="16" y="20" width="32" height="32" rx="6" ry="6" />
+                        <path d="M24 20v-6a8 8 0 0 1 16 0v6" />
+                        </svg>
+                    </div>
+        </div>
+        </div>
+
+
+        <div class="sassclub-container">
+            <h1 class="sassclub-title">THE SASS CLUB</h1>
+            <div class="sassclub-subtitle">Earn rewards for staying weird and bold</div>
+            <div class="sassclub-grid">
+                <!-- How it works + Redeem -->
+                <div class="sassclub-left">
+                    <div class="how-it-works">
+                    <div class="how-title">How it works?</div>
+                        <div class="text">
+                        <p>
+                            1. Sign up<br>
+                            Create an account to join automatically
+                        <p>
+                    </div>
+                </div>
+                    <div class="redeem">
+                    <div class="redeem-title">Redeem Sasscoins</div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Sasscoins</th>
+                            <th>Reward</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>😊 $100 off</td>
+                                <td>$100</td>
+                                </tr>
+                                <tr>
+                                    <td>😉 Free shipping</td>
+                                    <td>Free shipping</td>
+                                </tr>
+                                <tr>
+                                    <td>😄 $500 off or free tee</td>
+                                    <td>$500</td>
+                                </tr>
+                                <tr>
+                                    <td>🥱 Refer a friend</td>
+                                    <td>100 each</td>
+                                </tr>
+                                <tr>
+                                    <td>😮 Birthday Bonus</td>
+                                    <td>75</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    <!-- Earn Points -->
+                    <div class="sassclub-center">
+                        <div class="earn-points">
+                        <div class="earn-title">Earn Points</div>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Sasscoins</th>
+                                <th>Perks</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>😊 Sign up</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>😉 place an order<br><span class="small">(100=1 point)</span></td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>😄 write a product review</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>🥱 Share Boredwalk<br>on social media</td>
+                                <td>30</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                        <div class="gift-karma">
+                            <span>📦 <b>Extra Feature – “Gift Karma”</b></span><br>
+                            Send a gift? Get a 10 SassCoin bonus. If the receiver signs up, you both get 50 bonus coins.
+                        </div>
+                        </div>
+                        <!-- Bonus Tiers -->
+                        <div class="sassclub-right">
+                            <div class="bonus-tiers">
+                                <div class="bonus-title">Bonus Tiers</div>
+                                <div class="all">
+                                <div class="bonus-desc">(unlock personality perks)</div>
+                                <div class="bonus-levels">
+                                <div><b>Level 1:</b> Sass Rookie<br>Birthday Gift+early access</div>
+                                <div><b>Level 2:</b> Attitude Ace<br>Free shipping always + monthly offer</div>
+                                <div><b>Level 3:</b> Chaos Legend<br>15% off sitewide + exclusive drops</div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+    </body>
+</html>
